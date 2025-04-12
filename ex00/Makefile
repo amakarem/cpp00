@@ -6,7 +6,7 @@
 #    By: aelaaser <aelaaser@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/12 22:38:08 by aelaaser          #+#    #+#              #
-#    Updated: 2025/04/12 22:40:52 by aelaaser         ###   ########.fr        #
+#    Updated: 2025/04/12 22:50:12 by aelaaser         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ CFLAGS = -Wall -Werror -Wextra
 SRCS = megaphone.cpp
 
 # Object files
-OBJS = $(SRCS:.c=.o)
+OBJS = $(SRCS:.cpp=.o)
 
 # Library name
 NAME = megaphone
@@ -26,14 +26,13 @@ NAME = megaphone
 # Default target
 all: $(NAME)
 
-# Rule to create the static library
+# Rule to create the executable
 $(NAME): $(OBJS)
 	$(CC) $(OBJS) -o $(NAME)
 
-# # Rule to compile .c to .o
-%.o: %.c
-	$(CC) -Wall -Wextra -Werror -c $< -o $@
-
+# Rule to compile .cpp to .o
+%.o: %.cpp
+	$(CC) $(CFLAGS) -c $< -o $@
 
 # Clean up build files
 clean:
