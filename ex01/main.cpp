@@ -6,7 +6,7 @@
 /*   By: aelaaser <aelaaser@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/19 14:37:52 by aelaaser          #+#    #+#             */
-/*   Updated: 2025/04/19 15:44:29 by aelaaser         ###   ########.fr       */
+/*   Updated: 2025/04/19 15:48:14 by aelaaser         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include <limits> // for std::numeric_limits
 
 void printWelcome() {
-	std::cout << "📞 Welcome to Your Awesome PhoneBook 📖\n";
+	std::cout << "📞 Welcome to Your 42 PhoneBook 📖\n";
 	std::cout << "Available commands:\n";
 	std::cout << "  - ADD    ➤ Add a new contact\n";
 	std::cout << "  - SEARCH ➤ View contacts\n";
