@@ -55,12 +55,10 @@ Simulate a job application system where each application is timestamped and stor
 
 ---
 
-## ⚙️ Compilation and Execution
+## ⚙️ Clone the repository:
 
-To compile and run the exercises:
-
-Clone the repository:
    ```bash
    git clone https://github.com/amakarem/cpp00.git
    cd cpp00
   ```
+run `make` inside each ex folder to compile 
